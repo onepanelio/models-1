@@ -28,7 +28,7 @@ message EvalConfig {
   optional string eval_master = 7 [default=""];
 
   // Type of metrics to use for evaluation.
-  repeated string metrics_set = 8;
+  optional string metrics_set = 8;
 
   // Path to export detections to COCO compatible JSON format.
   optional string export_path = 9 [default=''];
