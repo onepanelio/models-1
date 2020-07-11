@@ -145,7 +145,8 @@ def get_evaluators(eval_config, categories):
   Raises:
     ValueError: if metric is not in the metric class dictionary.
   """
-  eval_metric_fn_keys = eval_config.metrics_set
+  logging.info('selected metric is: {}'.format(eval_config.metrics_set))
+  eval_metric_fn_keys = [eval_config.metrics_set]
   if not eval_metric_fn_keys:
     eval_metric_fn_keys = [EVAL_DEFAULT_METRIC]
   evaluators_list = []
