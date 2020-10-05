@@ -15,5 +15,5 @@
 
 from datasets import fsns
 from datasets import fsns_test
-
-__all__ = [fsns, fsns_test]
+from datasets import custom
+__all__ = [fsns, fsns_test, custom]
