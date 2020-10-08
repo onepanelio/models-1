@@ -1,15 +1,15 @@
 import sys
-sys.path.insert(0, './datasets/')
+# sys.path.insert(0, './datasets/')
 import fsns
 
-DEFAULT_DATASET_DIR = '/data/models/research'
+DEFAULT_DATASET_DIR = '/mnt/data/datasets'
 
 DEFAULT_CONFIG = {
     'name':
         'MYDATASET',
     'splits': {
         'train': {
-            'size': 4,
+            'size': 838,
             'pattern': 'tfexample_train'
         },
 #         'test': {
